@@ -1,0 +1,88 @@
+@media only screen and (max-width: 1151px) {
+	.what-we-do .wrapp-top {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.main_banner .text {
+		padding: 0 16px;
+	}
+}
+@media only screen and (max-width: 580px) {
+	.main_banner .text {
+		padding: 0 16px;
+		margin-bottom: calc((584px - 100vw)/2);
+	}
+}
+
+@media only screen and (max-width: 827px) {
+	header .menu_header {
+		display: none;
+	}
+
+	header .container {
+		padding: 0 10px;
+	}
+
+	.burger {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.what-we-do .text {
+		margin-left: 30px;
+	}
+
+	header .menu_header {
+		display: none;
+	}
+
+	header .container {
+		padding: 0 10px;
+	}
+
+	.burger {
+		display: block;
+	}
+
+	.main_banner .text {
+
+	}
+
+	.what-we-do .text {
+		margin-left: 30px;
+	}
+}
+
+
+
+@media only screen and (max-width: 534px) {
+	.banner_four .container {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.main_banner p {
+		font-size: 10px;
+		padding: 0 16px;
+	}
+
+	.what-we-do h2 {
+		padding: 16px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.banner_four .container {
+		margin-bottom: 24px;
+	}
+}
+
+@media only screen and (max-width: 360px) {}
+
+@media only screen and (max-width: 320px) {}
