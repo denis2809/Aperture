@@ -11,7 +11,7 @@
 	}
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 584px) {
 	.main_banner .text {
 		padding: 0 16px;
 		margin-bottom: calc((584px - 100vw)/2);
