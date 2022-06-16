@@ -10,6 +10,7 @@
 		padding: 0 16px;
 	}
 }
+
 @media only screen and (max-width: 580px) {
 	.main_banner .text {
 		padding: 0 16px;
@@ -28,6 +29,17 @@
 
 	.burger {
 		display: block;
+	}
+
+	header .container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header .logo {
+		margin-right: auto;
+		display: flex;
+
 	}
 }
 
@@ -48,10 +60,6 @@
 		display: block;
 	}
 
-	.main_banner .text {
-
-	}
-
 	.what-we-do .text {
 		margin-left: 30px;
 	}
@@ -63,6 +71,7 @@
 	.banner_four .container {
 		display: flex;
 		justify-content: center;
+		flex-wrap: wrap;
 	}
 }
 
@@ -80,9 +89,24 @@
 @media only screen and (max-width: 375px) {
 	.banner_four .container {
 		margin-bottom: 24px;
+		display: flex;
+		justify-content: center;
+	}
+	.what-we-do .wrapp-top {
+		flex-direction: column;
+		flex-wrap: wrap;
 	}
 }
 
 @media only screen and (max-width: 360px) {}
 
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 320px) {
+	.what-we-do .wrapp-top {
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.what-we-do .wrapp-top a {
+		margin-bottom: 16px;
+	}
+}
