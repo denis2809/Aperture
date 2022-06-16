@@ -16,6 +16,10 @@
 		padding: 0 16px;
 		margin-bottom: calc((584px - 100vw)/2);
 	}
+	.main_banner .container .text p {
+		font-size: 10px;
+		padding: 0 10px;
+	}
 }
 
 @media only screen and (max-width: 827px) {
@@ -84,35 +88,37 @@
 	.what-we-do h2 {
 		padding: 0 16px;
 	}
+
 	.what-we-do {
 		padding: 60px 0 50px;
-}
-
-@media only screen and (max-width: 375px) {
-	.banner_four .container {
-		margin-bottom: 24px;
-		display: flex;
-		justify-content: center;
-	}
-	.what-we-do .wrapp-top {
-		flex-direction: column;
-		flex-wrap: wrap;
-	}
-}
-
-@media only screen and (max-width: 360px) {}
-
-@media only screen and (max-width: 320px) {
-	.banner_four .container {
-		flex-direction: column;
-		flex-wrap: wrap;
 	}
 
-	.banner_four .container a{
-		margin-bottom: 16px;
+	@media only screen and (max-width: 375px) {
+		.banner_four .container {
+			margin-bottom: 24px;
+			display: flex;
+			justify-content: center;
+		}
+
+		.what-we-do .wrapp-top {
+			flex-direction: column;
+			flex-wrap: wrap;
+		}
 	}
-	
-	.what-we-do .wrapp-top a {
-		margin-bottom: 16px;
+
+	@media only screen and (max-width: 360px) {}
+
+	@media only screen and (max-width: 320px) {
+		.banner_four .container {
+			flex-direction: column;
+			flex-wrap: wrap;
+		}
+
+		.banner_four .container a {
+			margin-bottom: 16px;
+		}
+
+		.what-we-do .wrapp-top a {
+			margin-bottom: 16px;
+		}
 	}
-}
