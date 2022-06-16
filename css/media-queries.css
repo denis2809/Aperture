@@ -75,15 +75,17 @@
 	}
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 428px) {
 	.main_banner p {
 		font-size: 10px;
 		padding: 0 16px;
 	}
 
 	.what-we-do h2 {
-		padding: 16px;
+		padding: 0 16px;
 	}
+	.what-we-do {
+		padding: 60px 0 50px;
 }
 
 @media only screen and (max-width: 375px) {
@@ -101,11 +103,15 @@
 @media only screen and (max-width: 360px) {}
 
 @media only screen and (max-width: 320px) {
-	.what-we-do .wrapp-top {
+	.banner_four .container {
 		flex-direction: column;
 		flex-wrap: wrap;
 	}
 
+	.banner_four .container a{
+		margin-bottom: 16px;
+	}
+	
 	.what-we-do .wrapp-top a {
 		margin-bottom: 16px;
 	}
