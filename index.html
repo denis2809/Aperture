@@ -8,6 +8,8 @@
 	<title>ДЗ №6</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media-queries.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+	<link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -16,11 +18,11 @@
 	</div>
 	<header>
 		<div class="container">
-			<a href="#" class="logo">
+			<a data-aos="fade-right" href="#" class="logo">
 				<img src="images/Logo.svg" alt="Logo">
 			</a>
 			<nav>
-				<ul class="menu_header">
+				<ul data-aos="fade-left" class="menu_header">
 					<li>
 						<a href="#">Business areas</a>
 					</li>
@@ -45,7 +47,7 @@
 	</header>
 	<section class="main_banner">
 		<div class="container">
-			<article class="text">
+			<article class="text wow bounce">
 				<h3>Photographer & Filmmaker</h3>
 				<h1>Aperture Studios</h1>
 				<p>
@@ -72,7 +74,7 @@
 		</div>
 		<div class="container">
 			<div class="wrapp-top">
-				<div class="block">
+				<div data-aos="zoom-in" class="block">
 					<div class="img">
 						<img src="images/IMAGE-1.jpg" alt="img">
 						<article class="text">
@@ -87,7 +89,7 @@
 						</article>
 					</div>
 				</div>
-				<div class="block">
+				<div data-aos="zoom-in" class="block">
 					<div class="img">
 						<img src="images/IMAGE-2.jpg" alt="img">
 						<article class="text">
@@ -103,7 +105,7 @@
 				</div>
 			</div>
 			<div class="wrapp-top">
-				<div class="block">
+				<div data-aos="zoom-in" class="block">
 					<div class="img">
 						<img src="images/IMAGE-3.jpg" alt="img">
 						<article class="text">
@@ -118,7 +120,7 @@
 						</article>
 					</div>
 				</div>
-				<div class="block">
+				<div data-aos="zoom-in" class="block">
 					<div class="img">
 						<img src="images/IMAGE-4.jpg" alt="img">
 						<article class="text">
@@ -136,15 +138,15 @@
 		</div>
 	</section>
 	<section class="banner_two">
-		<ul class="components">
+		<ul data-aos="fade-right" class="components">
 			<li>1/2000s</li>
 			<li>f/11</li>
 			<li>100</li>
 			<li>Iceland</li>
 		</ul>
 	</section>
-	<section class="banner_three">
-		<ul class="components">
+	<section  class="banner_three">
+		<ul data-aos="fade-right" class="components">
 			<li>1/2000s</li>
 			<li>f/11</li>
 			<li>100</li>
@@ -152,6 +154,8 @@
 		</ul>
 	</section>
 	<section class="banner_four">
+		<div data-aos="fade-up"
+		data-aos-anchor-placement="top-bottom">
 		<h1>Past clients</h1>
 		<p>Trusted by your favourite companies</p>
 		<div class="container">
@@ -171,9 +175,10 @@
 				<img src="images/clients icon5.svg" alt="clients">
 			</a>
 		</div>
+	</div>
 	</section>
 	<section class="banner_five">
-		<ul class="components">
+		<ul data-aos="fade-right" class="components">
 			<li>1/2000s</li>
 			<li>f/11</li>
 			<li>100</li>
@@ -181,12 +186,20 @@
 		</ul>
 	</section>
 	<section class="banner_six">
-		<div class="container">
+		<div data-aos="flip-down" class="container">
 			<h1>Need help with photography or videography?</h1>
 			<h2>We're here for you!</h2>
 			<a class="get-btn" href="#">Get in touch</a>
 		</div>
 	</section>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+   <script src="js/wow.min.js"></script>
+   <script>
+   new WOW().init();
+   </script>
 	<script src="https://kit.fontawesome.com/1d44a8dca7.js" crossorigin="anonymous"></script>
 </body>
 
