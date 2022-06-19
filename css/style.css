@@ -11,8 +11,8 @@
 	font-display: swap;
 }
 
-body{
-	overflow-x:hidden;
+body {
+	overflow-x: hidden;
 }
 
 
@@ -83,7 +83,7 @@ header nav ul li:last-of-type a {
 	color: #000000;
 }
 
-.burger{
+.burger {
 	display: none;
 }
 
@@ -239,6 +239,16 @@ header nav ul li:last-of-type a {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
+}
+
+.banner_four a {
+	display: inline-block;
+	max-width: 128px;
+}
+
+.banner_four a img {
+	width: 100%;
+	display: block;
 }
 
 .banner_four .container a {
@@ -404,4 +414,40 @@ header nav ul li:last-of-type a {
 	line-height: 20px;
 	letter-spacing: 0.4px;
 	color: #000000;
+}
+
+/* ------------------ */
+
+.owl-stage {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.owl-nav .owl-prev::before {
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	content: "\f053";
+	font-size: 30px;
+	color: white;
+	position: relative;
+	left: -50px;
+}
+
+.owl-nav .owl-next::before {
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	content: "\f054";
+	font-size: 30px;
+	color: white;
+	position: relative;
+	right: -50px;
+}
+
+.owl-nav{
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	top: 25px;
 }
