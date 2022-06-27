@@ -13,9 +13,14 @@ $(document).ready(function () {
 				items: 1
 			},
 
+			820: {
+				items: 3
+			},
+
 			1000: {
 				items: 5
 			}
+			
 		}
 	});
 });
