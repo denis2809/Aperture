@@ -16,13 +16,16 @@
 		padding: 0 16px;
 		margin-bottom: calc((584px - 100vw)/2);
 	}
+
 	.main_banner .container .text p {
 		font-size: 10px;
 		padding: 0 10px;
 	}
 }
 
-@media only screen and (max-width: 827px) {
+@media only screen and (max-width: 835px) {
+
+
 	header .menu_header {
 		display: none;
 	}
@@ -43,11 +46,92 @@
 	header .logo {
 		margin-right: auto;
 		display: flex;
+	}
 
+	.nav__list-item {
+		margin: inherit;
+		margin-left: 14px;
+	}
+
+	.nav__list .nav__list-item:first-of-type a {
+		margin-left: inherit;
 	}
 }
 
-@media only screen and (max-width: 767px) {
+/* !--------------------------------------------------------------------------------768 */
+
+
+@media only screen and (max-width: 768px) {
+
+	.nav__list .nav__list-item:first-of-type a {
+		font-size: 3vh;
+		margin-right: inherit;
+	}
+
+	.nav__list-item a:after {
+		position: absolute;
+		content: '';
+		top: 50%;
+		margin-top: -2px;
+		left: 50%;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		background-color: #8167a9;
+		z-index: 1;
+		-webkit-transition: all 200ms linear;
+		transition: all 200ms linear;
+	}
+
+	.logo-wrap {
+		top: 10px;
+	}
+
+	.header-wrapper {
+		width: calc(100% - 100px);
+		margin-left: 50px;
+	}
+
+	.nav__list {
+		display: inherit;
+	}
+
+	.nav__list-item a {
+		text-transform: uppercase;
+		overflow: hidden;
+		padding-left: 5px;
+		padding-right: 5px;
+		font-weight: 900;
+	}
+
+	.nav__list-item {
+		opacity: 0;
+		font-size: 3vh;
+		overflow: hidden;
+		line-height: 1.15;
+		letter-spacing: 3px;
+		-webkit-transform: translate(100px, 0%);
+		transform: translate(100px, 0%);
+		margin-left: inherit;
+		margin: 32px 0 32px;
+	}
+
+	.nav-but-wrap {
+		display: inline-block;
+	}
+
+	.nav__content {
+		position: fixed;
+		visibility: hidden;
+		-webkit-transform: translate(0%, -50%);
+		transform: translate(0%, -50%);
+		margin-top: 20px;
+	}
+
+	.nav {
+		position: fixed;
+	}
+
 	.what-we-do .text {
 		margin-left: 30px;
 	}
@@ -77,6 +161,7 @@
 		justify-content: center;
 		flex-wrap: wrap;
 	}
+
 	.banner_four .container a {
 		margin: 16px 32px;
 
@@ -98,34 +183,34 @@
 	}
 }
 
-	@media only screen and (max-width: 375px) {
-		.banner_four .container {
-			margin-bottom: 24px;
-			display: flex;
-			justify-content: center;
-		}
-
-		.what-we-do .wrapp-top {
-			flex-direction: column;
-			flex-wrap: wrap;
-		}
+@media only screen and (max-width: 375px) {
+	.banner_four .container {
+		margin-bottom: 24px;
+		display: flex;
+		justify-content: center;
 	}
 
-	@media only screen and (max-width: 360px) {}
-
-	@media only screen and (max-width: 320px) {
-
-		.banner_four .container {
-			flex-direction: column;
-			flex-wrap: wrap;
-		}
-
-		.banner_four .container a {
-			margin-bottom: 16px;
-			margin: 0 16px;
-		}
-
-		.what-we-do .wrapp-top a {
-			margin-bottom: 16px;
-		}
+	.what-we-do .wrapp-top {
+		flex-direction: column;
+		flex-wrap: wrap;
 	}
+}
+
+@media only screen and (max-width: 360px) {}
+
+@media only screen and (max-width: 320px) {
+
+	.banner_four .container {
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	.banner_four .container a {
+		margin-bottom: 16px;
+		margin: 0 16px;
+	}
+
+	.what-we-do .wrapp-top a {
+		margin-bottom: 16px;
+	}
+}
